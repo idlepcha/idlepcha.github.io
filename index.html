@@ -12,7 +12,11 @@
                         }
                                 }
                 document.addEventListener('DOMContentLoaded', function(){
-                    document.querySelector('button').onclick = toggle;  
+                    document.querySelector('button').onclick = toggle; 
+                    document.querySelector('form').onsubmit = function(){
+                        const name = document.querySelector('#name').value;
+                        alert (`Hello,  ${name} !);
+                    };  
                 }) ;               
                 
             </script>
@@ -37,8 +41,23 @@
      <li>Travel</li>
             </ul>
  </div>
-        <button > Toggle Header </button>
-        </body>
+    <form>
+        <input id =" name" placeholder="name" type="text">
+        <input type="submit">
+
+    </form>      
+ 
+
+
+
+
+    <button> Toggle Header </button>
+        
+
+
+
+
+</body>
 
 
 </html>
