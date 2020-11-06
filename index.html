@@ -3,14 +3,15 @@
     <head>
         <title>MainPage</title>
         <script>alert("Thank you for visiting my Page !");
-        function click(){
+        function toggle(){
         if (document.querySelector('h1').innerHTML == "Welcome to Ivan's GitHub Page"){
-            document.querySelector('h1').innerHTML = "GitHub is Great !";
+            document.querySelector('h1').innerHTML = "GitHub is Great!";
         }
         else {
             document.querySelector('h1').innerHTML = "Welcome to Ivan's GitHub Page";
         }
         }
+        document.querySelector('button').onclick = toggle;
 
         </script>
        
@@ -34,7 +35,7 @@
      <li>Travel</li>
             </ul>
  </div>
-        <button onclick = "click()" > Click Here</button>
+        <button > Click Here</button>
         </body>
 
 
