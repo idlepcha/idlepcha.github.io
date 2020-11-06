@@ -2,18 +2,18 @@
 <html lang="en">
     <head>
         <title>MainPage</title>
-        <script>alert("Thank you for visiting my Page !");
-        function toggle(){
-        if (document.querySelector('h1').innerHTML == "Welcome to Ivan's GitHub Page"){
-            document.querySelector('h1').innerHTML = "GitHub is Great!";
-        }
-        else {
-            document.querySelector('h1').innerHTML = "Welcome to Ivan's GitHub Page";
-        }
-        }
-        document.querySelector('button').onclick = toggle;
-
-        </script>
+            <script>alert("Thank you for visiting my Page !");
+                function toggle(){
+                    if (document.querySelector('h1').innerHTML == "Welcome to Ivan's GitHub Page"){
+                        document.querySelector('h1').innerHTML = "GitHub is Great!";
+                        }
+                    else {
+                        document.querySelector('h1').innerHTML = "Welcome to Ivan's GitHub Page";
+                        }
+                                }
+                document.addEventListener('DOMContentLoaded')                
+                document.querySelector('button').onclick = toggle;
+            </script>
        
     </head>
     <body>
@@ -35,7 +35,7 @@
      <li>Travel</li>
             </ul>
  </div>
-        <button > Click Here</button>
+        <button > Toggle Header </button>
         </body>
 
 
