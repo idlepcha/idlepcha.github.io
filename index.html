@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>MainPage</title>
+    <title>MainPage</title>
             <script>alert("Thank you for visiting my Page !");
                 function toggle(){
                     if (document.querySelector('h1').innerHTML == "Welcome to Ivan's GitHub Page"){
@@ -11,17 +11,14 @@
                         document.querySelector('h1').innerHTML = "Welcome to Ivan's GitHub Page";
                         }
                                 }
-                
                 document.addEventListener('DOMContentLoaded', function(){
                 document.querySelector('button').onclick = toggle; 
-                })
-                document.querySelector('form').onsubmit = function()
-                        {
+                });
+                document.querySelector('form').onsubmit = function(){
                         const name = document.querySelector('#name').value;
-                        alert (`Hello, ${name}!);
-                        }                                                                     
-            </script>
-       
+                        alert (`Hello, ${name}!`); 
+                        }                                                               
+            </script>   
     </head>
     <body>
         <div style="background-color: darkgoldenrod" >
@@ -32,33 +29,20 @@
         </div>
         <div style = "background-color: brown; width: 400px;">
             <h3 style= "margin:20px; font-size: 40px; color: blanchedalmond;" > My Interests </h3>
-            <ul style="margin: 20px; font-size: 30px;">
-               
-     <li>Physics</li>
-     <li>Robotics</li>
-     <li>Coding</li>
-     <li>Astronomy</li>
-     <li>Fun Science</li>
-     <li>Travel</li>
+            <ul style="margin: 20px; font-size: 30px;">   
+                <li>Physics</li>
+                <li>Robotics</li>
+                <li>Coding</li>
+                <li>Astronomy</li>
+                <li>Fun Science</li>
+                <li>Travel</li>
             </ul>
- </div>
+        </div>
     <form>
         <input id =" name" placeholder="name" type="text">
         <input type="submit">
-
     </form>      
- 
-
-
-
-
-    <button> Toggle Header </button>
-        
-
-
-
-
-</body>
-
-
-</html>
+    <button> Toggle Header </button>    
+    
+    </body>
+    </html>
